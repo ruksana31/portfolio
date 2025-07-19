@@ -1,0 +1,162 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+#nav {
+  background-color: #e3e6f0;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#nav a {
+  color: #2c3e50;
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+#nav a:hover {
+  color: #6c5ce7;
+  text-decoration: underline;
+}
+
+/* Header + Quote */
+.both {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.head {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.quote {
+  font-style: italic;
+  color: #6c757d;
+  margin-top: 6px;
+  font-size: 15px;
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+/* Profile Image */
+.img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title Styles */
+.parts, .h2 {
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  color: #6c5ce7;
+  font-size: 22px;
+}
+
+/* Box for center-aligned blocks */
+.box {
+  width: 500px;
+  margin: auto;
+  color: #4b4b4b;
+  text-align: center;
+}
+
+/* List Styling with checklist image */
+.categories {
+  list-style-image: url('checklist.png');
+  list-style-position: inside;
+  margin: 15px auto;
+  padding-left: 20px;
+  width: fit-content;
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: 1px dotted #b2bec3;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Table Styling */
+table {
+  width: 60%;
+  margin: 25px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+th {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  color: #333;
+}
+
+/* Form Inputs */
+form {
+  width: 60%;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form input[type="submit"] {
+  background-color: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #5949c4;
+}
